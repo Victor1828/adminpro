@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card-body">
+    <h4 class="card-title">{{leyenda}} - {{porcentaje}}</h4>
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <button class="btn btn-outline-secondary" type="button" (click)="cambiarValor(-5)">
+            <i class="fa fa-minus"></i>
+          </button>
+        </div>
+        <input #progressInput type="number" class="form-control"
+        aria-describedby="basic-addon1" [(ngModel)]="porcentaje" 
+        name="porcentaje" (ngModelChange)="limite($event)">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="cambiarValor(+5)">
+            <i class="fa fa-plus"></i>
+          </button>
+        </div>
+      </div>
+  </div>
+</div>

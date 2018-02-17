@@ -1,0 +1,35 @@
+<div class="container mt-3">
+  <div class="row">
+
+    <div class="col-md-6">
+      <app-grafica-donas [chartData]="graficos.grafico1.data"
+                         [chartLabel]="graficos.grafico1.labels"
+                         [chartType]="graficos.grafico1.type"
+                         [leyenda]="graficos.grafico1.leyenda"></app-grafica-donas>
+    </div>
+
+    <div class="col-md-6">
+      <app-grafica-donas [chartData]="graficos.grafico2.data"
+                         [chartLabel]="graficos.grafico2.labels"
+                         [chartType]="graficos.grafico2.type"
+                         [leyenda]="graficos.grafico2.leyenda"></app-grafica-donas>
+    </div>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-6">
+      <app-grafica-donas [chartData]="graficos.grafico3.data"
+                         [chartLabel]="graficos.grafico3.labels"
+                         [chartType]="graficos.grafico3.type"
+                         [leyenda]="graficos.grafico3.leyenda"></app-grafica-donas>
+    </div>
+
+    <div class="col-md-6">
+      <app-grafica-donas [chartData]="graficos.grafico4.data"
+                         [chartLabel]="graficos.grafico4.labels"
+                         [chartType]="graficos.grafico4.type"
+                         [leyenda]="graficos.grafico4.leyenda"></app-grafica-donas>
+    </div>
+  </div>
+</div>
