@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ajustes } from '../interfaces/ajustes';
+import { Ajustes } from '../../interfaces/ajustes';
 
 @Injectable()
 export class SettingsService {

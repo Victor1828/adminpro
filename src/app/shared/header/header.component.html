@@ -72,8 +72,8 @@
           <a class="nav-link dropdown-toggle waves-effect waves-dark" href="" id="2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <i class="mdi mdi-email"></i>
             <div class="notify">
-              <span class="heartbit"></span>
-              <span class="point"></span>
+              <span [ngClass]="{'white': color()}" class="heartbit"></span>
+              <span [ngClass]="{'white': color()}" class="point"></span>
             </div>
           </a>
           <div class="dropdown-menu mailbox dropdown-menu-right animated bounceInDown" aria-labelledby="2">

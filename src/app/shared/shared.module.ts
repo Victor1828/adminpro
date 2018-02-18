@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 //Componenetes
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
@@ -14,7 +15,10 @@ import { SidebarComponent } from './sidebar/sidebar.component';
         PagenotfoundComponent,
         SidebarComponent
     ],
-    imports: [ CommonModule ],
+    imports: [
+        CommonModule,
+        RouterModule
+    ],
     exports: [
         BreadcrumbsComponent,
         HeaderComponent,

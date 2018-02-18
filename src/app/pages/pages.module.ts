@@ -10,6 +10,7 @@ import { GraficaDonasComponent } from '../components/grafica-donas/grafica-donas
 import { IncrementarComponent } from '../components/incrementar/incrementar.component';
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
+import { PromesasComponent } from './promesas/promesas.component';
 
 //Modulos
 import { SharedModule } from '../shared/shared.module';
@@ -19,6 +20,7 @@ import { ChartsModule } from 'ng2-charts';
 
 //Rutas
 import { PagesRoutingModule } from './pages.routes';
+import { RxjsComponent } from './rxjs/rxjs.component';
 
 @NgModule({
     declarations: [
@@ -28,7 +30,9 @@ import { PagesRoutingModule } from './pages.routes';
         GraficaDonasComponent,
         IncrementarComponent,
         PagesComponent,
-        ProgressComponent
+        ProgressComponent,
+        PromesasComponent,
+        RxjsComponent
     ],
     imports: [
         ChartsModule,
