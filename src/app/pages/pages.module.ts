@@ -11,12 +11,16 @@ import { IncrementarComponent } from '../components/incrementar/incrementar.comp
 import { PagesComponent } from './pages.component';
 import { ProgressComponent } from './progress/progress.component';
 import { PromesasComponent } from './promesas/promesas.component';
+import { ProfileComponent } from './profile/profile.component';
 
 //Modulos
 import { SharedModule } from '../shared/shared.module';
 
 //Ng2-charts
 import { ChartsModule } from 'ng2-charts';
+
+//Pipes
+import { PipesModule } from '../pipes/pipes.module';
 
 //Rutas
 import { PagesRoutingModule } from './pages.routes';
@@ -30,6 +34,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         GraficaDonasComponent,
         IncrementarComponent,
         PagesComponent,
+        ProfileComponent,
         ProgressComponent,
         PromesasComponent,
         RxjsComponent
@@ -39,6 +44,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
         CommonModule,
         FormsModule,
         PagesRoutingModule,
+        PipesModule,
         SharedModule
     ],
     exports: [

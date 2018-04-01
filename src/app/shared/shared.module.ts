@@ -8,6 +8,9 @@ import { HeaderComponent } from './header/header.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
+//Pipes
+import { PipesModule } from '../pipes/pipes.module';
+
 @NgModule({
     declarations: [
         BreadcrumbsComponent,
@@ -17,6 +20,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
     ],
     imports: [
         CommonModule,
+        PipesModule,
         RouterModule
     ],
     exports: [
